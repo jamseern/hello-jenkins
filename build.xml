@@ -8,6 +8,12 @@
   <property name="build" location="build"/>
   <property name="dist"  location="dist"/>
 
+  <target name="clean"
+          description="clean up" >
+      <!-- Delete the ${build} and ${dist} directory trees -->
+      <delete dir="${build}"/>
+      <delete dir="${dist}"/>
+  </target>  
     
   <target name="init" depends="clean">
         <!-- Create the time stamp -->
@@ -49,10 +55,5 @@
   </target>
   
 
-  <target name="clean"
-        description="clean up" >
-    <!-- Delete the ${build} and ${dist} directory trees -->
-    <delete dir="${build}"/>
-    <delete dir="${dist}"/>
-  </target>
+  
 </project>
