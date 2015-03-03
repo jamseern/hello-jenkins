@@ -63,7 +63,6 @@
             </fileset>
         </copy>
         
-        <mkdir dir="${build}/application/Proxies" />
     
         
         <copy file="${basedir}/build.xml" todir="${build}"/>
