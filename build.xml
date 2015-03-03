@@ -20,16 +20,8 @@
         <tstamp/>
         <!-- Create the build directory structure used by compile -->
         <mkdir dir="${build}"/>
-        <mkdir dir="${build}/logs/" />
-
-        <mkdir dir="${build}/bin" />
-        <mkdir dir="${build}/api"/>
-        <mkdir dir="${build}/code-browser"/>
-        <mkdir dir="${build}/coverage"/>
-        <mkdir dir="${build}/logs"/>
-        <mkdir dir="${build}/pdepend"/>
-        <mkdir dir="${build}/phpdox"/>        
-        <mkdir dir="${build}/data"/>        
+        
+        <mkdir dir="${build}/sample"/>        
                 
         <mkdir dir="${dist}"/>
     </target>
