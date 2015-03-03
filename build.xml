@@ -53,7 +53,24 @@
       <tar destfile="${dist}/hello-jenkins.tar" basedir="${basedir}/build"/>
       <gzip destfile="${dist}/hello-jenkins.tar.gz" src="${dist}/hello-jenkins.tar"/>
   </target>
-  
+  <target name="build" depends="init"
+            description="build the source " >
+    
+        <copy todir="${build}/sample">
+            <fileset dir="${basedir}/sample">
+                <exclude name="**/.svn"/>
+                <exclude name="**/.git"/>
+            </fileset>
+        </copy>
+        
+        <mkdir dir="${build}/application/Proxies" />
+    
+        
+        <copy file="${basedir}/build.xml" todir="${build}"/>
+    
+
+    
+    </target>
 
   
 </project>
